@@ -1,0 +1,29 @@
+name: Debug GH_PAT
+on:
+  push:
+    branches: [debug/gh-pat-probe]
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe GH_PAT secret (value never printed)
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [ -z "$GH_PAT" ]; then
+            echo "RESULT: GH_PAT secret is EMPTY / not set"
+          else
+            echo "RESULT: GH_PAT secret is set (length=${#GH_PAT})"
+          fi
+          echo "== read history commits (exactly what graphs/api generation needs) =="
+          curl -s -o /dev/null -w "history commits -> HTTP %{http_code}\n" \
+            -H "Authorization: Bearer $GH_PAT" \
+            "https://api.github.com/repos/$REPO/commits?path=history/google.yml&per_page=1"
+          echo "== authenticated identity =="
+          curl -s -H "Authorization: Bearer $GH_PAT" https://api.github.com/user \
+            | grep -o '"login": *"[^"]*"' || echo "(no login returned)"
+          echo "== rate limit (authenticated=5000, unauthenticated/invalid=60) =="
+          curl -s -H "Authorization: Bearer $GH_PAT" https://api.github.com/rate_limit \
+            | grep -o '"limit": *[0-9]*' | head -1

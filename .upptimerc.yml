@@ -12,6 +12,15 @@ sites:
   - name: Sun Phu Quoc Airways
     url: https://sunphuquocairways.com/
 
+# How often each workflow runs (cron). Uptime check stays at the GitHub minimum
+# of every 5 minutes; everything that was daily now runs every 15 minutes.
+workflowSchedule:
+  uptime: "*/5 * * * *"
+  responseTime: "*/15 * * * *"
+  graphs: "*/15 * * * *"
+  staticSite: "*/15 * * * *"
+  summary: "*/15 * * * *"
+
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there

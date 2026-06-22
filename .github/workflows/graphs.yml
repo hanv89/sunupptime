@@ -34,6 +34,10 @@ jobs:
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ secrets.GH_PAT || github.token }}
+      - name: Use Node 20 (@upptime/graphs is not compatible with Node 24)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
       - name: Generate graphs
         uses: upptime/uptime-monitor@v1.43.1
         with:

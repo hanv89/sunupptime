@@ -1,0 +1,29 @@
+name: Debug Graphs Verbose
+on:
+  push:
+    branches: [debug/graphs-verbose]
+  workflow_dispatch:
+jobs:
+  dbg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT || github.token }}
+      - name: Run @upptime/graphs directly (capture stdout+stderr+exit)
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          echo "node=$(node -v) npm=$(npm -v)"
+          echo "upptimerc owner/repo:"; grep -E '^(owner|repo):' .upptimerc.yml
+          echo "history commits (google):"; git rev-list --count HEAD -- history/google.yml
+          echo "================= RUN @upptime/graphs ================="
+          set +e
+          NODE_OPTIONS="--stack-trace-limit=100" npx --yes @upptime/graphs@1.2.22 2>&1
+          echo "================= EXIT CODE: $? ================="
+          echo "PNGs modified in last 5 min:"
+          find graphs -type f -name '*.png' -newermt '-5 minutes' 2>/dev/null | head -50
+          echo "graphs/google listing:"; ls -la graphs/google 2>/dev/null || echo "(none)"

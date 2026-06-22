@@ -7,10 +7,14 @@ sites:
     url: https://www.google.com
   - name: Wikipedia
     url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
   - name: Sun Phu Quoc Airways
     url: https://sunphuquocairways.com/
+  - name: Visit Vietnam
+    url: https://visitvietnam.asia
+  - name: Sun Signature
+    url: https://sunsignature.vn
+  - name: Booking Sun World
+    url: https://booking.sunworld.vn
 
 # How often each workflow runs (cron). Uptime check stays at the GitHub minimum
 # of every 5 minutes; everything that was daily now runs every 15 minutes.

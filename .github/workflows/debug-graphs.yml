@@ -1,0 +1,33 @@
+name: Debug Graphs V2
+on:
+  push:
+    branches: [debug/graphs-v2]
+  workflow_dispatch:
+jobs:
+  dbg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT || github.token }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run @upptime/graphs with Node 20, capture stderr + md5
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          echo "node=$(node -v)"
+          echo "=== md5 BEFORE ==="
+          md5sum graphs/google/response-time.png graphs/visit-vietnam/response-time.png
+          echo "=== RUN @upptime/graphs (stdout+stderr captured) ==="
+          set +e
+          npx --yes @upptime/graphs@1.2.22 >/tmp/g.out 2>/tmp/g.err
+          echo "EXIT=$?"
+          echo "----- STDOUT -----"; cat /tmp/g.out
+          echo "----- STDERR -----"; cat /tmp/g.err
+          echo "=== md5 AFTER (differ => really regenerated) ==="
+          md5sum graphs/google/response-time.png graphs/visit-vietnam/response-time.png

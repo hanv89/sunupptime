@@ -59,18 +59,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/visitvietnam.asia.ico",
     "slug": "visit-vietnam",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "99.96%",
+    "uptimeDay": "99.57%",
+    "uptimeWeek": "99.94%",
+    "uptimeMonth": "99.96%",
+    "uptimeYear": "99.96%",
     "time": 5946,
     "timeDay": 5642,
     "timeWeek": 5877,
     "timeMonth": 5946,
     "timeYear": 5946,
     "dailyMinutesDown": {
-      "2026-06-26": 0
+      "2026-06-26": 6
     }
   },
   {

@@ -4,18 +4,20 @@
     "url": "https://www.google.com",
     "icon": "https://icons.duckduckgo.com/ip3/www.google.com.ico",
     "slug": "google",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.97%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 82,
-    "timeDay": 81,
-    "timeWeek": 85,
+    "timeDay": 86,
+    "timeWeek": 86,
     "timeMonth": 85,
     "timeYear": 82,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-22": 0
+    }
   },
   {
     "name": "Wikipedia",
@@ -29,8 +31,8 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 188,
-    "timeDay": 206,
-    "timeWeek": 167,
+    "timeDay": 210,
+    "timeWeek": 168,
     "timeMonth": 188,
     "timeYear": 188,
     "dailyMinutesDown": {}
@@ -46,11 +48,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 5533,
-    "timeDay": 4228,
-    "timeWeek": 4754,
-    "timeMonth": 5482,
-    "timeYear": 5533,
+    "time": 5531,
+    "timeDay": 4247,
+    "timeWeek": 4747,
+    "timeMonth": 5484,
+    "timeYear": 5531,
     "dailyMinutesDown": {}
   },
   {
@@ -64,11 +66,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 4863,
-    "timeDay": 5596,
-    "timeWeek": 4911,
-    "timeMonth": 4728,
-    "timeYear": 4863,
+    "time": 4862,
+    "timeDay": 5527,
+    "timeWeek": 4906,
+    "timeMonth": 4730,
+    "timeYear": 4862,
     "dailyMinutesDown": {}
   },
   {
@@ -82,11 +84,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 4587,
-    "timeDay": 4398,
-    "timeWeek": 4358,
-    "timeMonth": 4704,
-    "timeYear": 4587,
+    "time": 4586,
+    "timeDay": 4345,
+    "timeWeek": 4361,
+    "timeMonth": 4705,
+    "timeYear": 4586,
     "dailyMinutesDown": {}
   },
   {
@@ -100,11 +102,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 3644,
-    "timeDay": 3587,
-    "timeWeek": 3472,
-    "timeMonth": 3742,
-    "timeYear": 3644,
+    "time": 3649,
+    "timeDay": 3724,
+    "timeWeek": 3490,
+    "timeMonth": 3745,
+    "timeYear": 3649,
     "dailyMinutesDown": {}
   }
 ]

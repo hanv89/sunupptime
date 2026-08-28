@@ -32,7 +32,7 @@
     "uptimeYear": "100.00%",
     "time": 188,
     "timeDay": 180,
-    "timeWeek": 190,
+    "timeWeek": 192,
     "timeMonth": 188,
     "timeYear": 188,
     "dailyMinutesDown": {}
@@ -50,8 +50,8 @@
     "uptimeYear": "100.00%",
     "time": 5425,
     "timeDay": 1795,
-    "timeWeek": 4640,
-    "timeMonth": 5092,
+    "timeWeek": 4668,
+    "timeMonth": 5085,
     "timeYear": 5425,
     "dailyMinutesDown": {}
   },
@@ -61,18 +61,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/visitvietnam.asia.ico",
     "slug": "visit-vietnam",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.96%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "99.76%",
+    "uptimeDay": "82.65%",
+    "uptimeWeek": "97.52%",
+    "uptimeMonth": "99.43%",
+    "uptimeYear": "99.76%",
     "time": 4986,
     "timeDay": 5730,
-    "timeWeek": 5811,
-    "timeMonth": 4864,
+    "timeWeek": 5821,
+    "timeMonth": 4860,
     "timeYear": 4986,
     "dailyMinutesDown": {
-      "2026-08-28": 1
+      "2026-08-28": 250
     }
   },
   {
@@ -88,8 +88,8 @@
     "uptimeYear": "100.00%",
     "time": 4560,
     "timeDay": 9070,
-    "timeWeek": 4314,
-    "timeMonth": 4522,
+    "timeWeek": 4336,
+    "timeMonth": 4527,
     "timeYear": 4560,
     "dailyMinutesDown": {}
   },
@@ -106,8 +106,8 @@
     "uptimeYear": "100.00%",
     "time": 3609,
     "timeDay": 3973,
-    "timeWeek": 3365,
-    "timeMonth": 3606,
+    "timeWeek": 3388,
+    "timeMonth": 3607,
     "timeYear": 3609,
     "dailyMinutesDown": {}
   }

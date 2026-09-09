@@ -5,19 +5,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.google.com.ico",
     "slug": "google",
     "status": "up",
-    "uptime": "99.99%",
+    "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.96%",
-    "uptimeYear": "99.99%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 83,
-    "timeDay": 80,
-    "timeWeek": 81,
+    "timeDay": 73,
+    "timeWeek": 80,
     "timeMonth": 85,
     "timeYear": 83,
-    "dailyMinutesDown": {
-      "2026-08-22": 17
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Wikipedia",
@@ -31,8 +29,8 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 189,
-    "timeDay": 272,
-    "timeWeek": 232,
+    "timeDay": 275,
+    "timeWeek": 230,
     "timeMonth": 187,
     "timeYear": 189,
     "dailyMinutesDown": {}
@@ -48,11 +46,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 5403,
-    "timeDay": 6024,
-    "timeWeek": 5404,
-    "timeMonth": 4871,
-    "timeYear": 5403,
+    "time": 5405,
+    "timeDay": 5930,
+    "timeWeek": 5494,
+    "timeMonth": 4865,
+    "timeYear": 5405,
     "dailyMinutesDown": {}
   },
   {
@@ -61,20 +59,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/visitvietnam.asia.ico",
     "slug": "visit-vietnam",
     "status": "up",
-    "uptime": "99.10%",
+    "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "97.50%",
-    "uptimeYear": "99.10%",
-    "time": 5033,
-    "timeDay": 6626,
-    "timeWeek": 6044,
-    "timeMonth": 5036,
-    "timeYear": 5033,
-    "dailyMinutesDown": {
-      "2026-08-29": 171,
-      "2026-08-28": 925
-    }
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 5035,
+    "timeDay": 6396,
+    "timeWeek": 6080,
+    "timeMonth": 5031,
+    "timeYear": 5035,
+    "dailyMinutesDown": {}
   },
   {
     "name": "Sun Signature",
@@ -87,11 +82,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 4571,
-    "timeDay": 5929,
-    "timeWeek": 4814,
-    "timeMonth": 4501,
-    "timeYear": 4571,
+    "time": 4570,
+    "timeDay": 5809,
+    "timeWeek": 4765,
+    "timeMonth": 4500,
+    "timeYear": 4570,
     "dailyMinutesDown": {}
   },
   {
@@ -106,9 +101,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 3609,
-    "timeDay": 3594,
-    "timeWeek": 3524,
-    "timeMonth": 3547,
+    "timeDay": 3892,
+    "timeWeek": 3552,
+    "timeMonth": 3533,
     "timeYear": 3609,
     "dailyMinutesDown": {}
   }
